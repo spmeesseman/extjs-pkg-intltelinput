@@ -1,0 +1,146 @@
+{
+    "name": "@spmeesseman/extjs-pkg-intltelinput",
+    "version": "0.0.1",
+    "displayName": "IntlTelInput ExtJs Wrapper",
+    "description": "ExtJS Package - IntlTelInput ExtJs Wrapper",
+    "license": "MIT",
+    "author": {
+        "name": "Scott Meesseman",
+        "email": "spmeesseman@gmail.com"
+    },
+    "bugs": {
+        "email": "spmeesseman@gmail.com",
+        "url": "https://github.com/spmeesseman/extjs-pkg-intltelinput/issues"
+    },
+    "homepage": "https://www.npmjs.com/package/@spmeesseman/extjs-pkg-intltelinput",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/spmeesseman/extjs-pkg-intltelinput.git"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "intl-tel-input": "^16.0.11"
+    },
+    "bundleDependencies": [
+        "intl-tel-input"
+    ],
+    "files": [
+        "classic",
+        "resources"
+    ],
+    "keywords": [
+        "sencha extjs",
+        "intl-tel-input",
+        "phone number field"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "sencha": {
+        "name": "intltelinput",
+        "namespace": "Ext.ux",
+        "framework": "ext",
+        "type": "code",
+        "creator": "spmeesseman",
+        "summary": "ExtJs wrapper for IntlTelInput",
+        "detailedDescription": "ExtJs Package - ExtJs wrapper for IntlTelInput",
+        "version": "0.0.1.0",
+        "compatversion": "0.0.1",
+        "format": "1",
+        "slicer": null,
+        "output": "${framework.dir}/build/packages/${package.name}",
+        "local": true,
+        "resource": {
+            "paths": ""
+        },
+        "resources": [
+            {
+                "path": "${package.dir}/resources/img",
+                "output": "shared"
+            }
+        ],
+        "classic": {
+            "sass": {
+                "namespace": "Ext.ux",
+                "etc": [
+                    "${package.dir}/sass/etc"
+                ],
+                "var": [
+                    "${package.dir}/sass/var"
+                ],
+                "src": [
+                    "${package.dir}/sass/src",
+                    "${package.dir}/classic/sass/src"
+                ]
+            },
+            "classpath": [
+                "${package.dir}/classic/src"
+            ]
+        },
+        "modern": {
+            "sass": {
+                "namespace": "Ext.ux",
+                "etc": [
+                    "${package.dir}/sass/etc"
+                ],
+                "var": [
+                    "${package.dir}/sass/var"
+                ],
+                "src": [
+                    "${package.dir}/sass/src",
+                    "${package.dir}/modern/sass/src"
+                ]
+            },
+            "classpath": [
+                "${package.dir}/modern/src"
+            ]
+        },
+        "development": {
+            "css": [
+                {
+                    "path": "${package.dir}/node_modules/intl-tel-input/build/css/intlTelInput.css"
+                },
+                {
+                    "path": "${package.dir}/resources/css/intltelinput.css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "${package.dir}/node_modules/intl-tel-input/build/js/utils.js"
+                },
+                {
+                    "path": "${package.dir}/node_modules/intl-tel-input/build/js/intlTelInput.js"
+                }
+            ]
+        },
+        "production": {
+            "css": [
+                {
+                    "path": "${package.dir}node_modules/intl-tel-input/build/css/intlTelInput.min.css"
+                },
+                {
+                    "path": "${package.dir}/resources/css/intltelinput.css"
+                }
+            ],
+            "js": [
+                {
+                    "path": "${package.dir}/node_modules/intl-tel-input/build/js/utils.js",
+                    "remote": true
+                },
+                {
+                    "path": "${package.dir}/node_modules/intl-tel-input/build/js/intlTelInput.min.js",
+                    "remote": true
+                }
+            ]
+        },
+        "overrides": [
+            "${package.dir}/overrides"
+        ],
+        "requires": [
+            "core"
+        ],
+        "ignore": [
+            "(^|/)CVS(/?$|/.*?$)"
+        ]
+    }
+}

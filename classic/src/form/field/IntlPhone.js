@@ -26,7 +26,7 @@ Ext.define('Ext.ux.form.field.IntlPhone',
         //
         // Dyanmically set the input id so we can have multiple components rendered at the same time
         //
-        this.inputId = 'intltelinput-el-' + (Ext.csi.form.field.IntlPhone.idCounter++).toString();
+        this.inputId = 'intltelinput-el-' + (Ext.ux.form.field.IntlPhone.idCounter++).toString();
     },
 
     listeners:

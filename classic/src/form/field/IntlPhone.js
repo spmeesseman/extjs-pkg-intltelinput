@@ -1,4 +1,4 @@
-Ext.define('Ext.csi.form.field.IntlPhone', 
+Ext.define('Ext.ux.form.field.IntlPhone', 
 {
     extend: 'Ext.form.field.Text',
     xtype: 'intlphonefield',

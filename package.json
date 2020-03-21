@@ -1,6 +1,6 @@
 {
     "name": "@spmeesseman/extjs-pkg-intltelinput",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "displayName": "IntlTelInput ExtJs Wrapper",
     "description": "ExtJS Package - IntlTelInput ExtJs Wrapper",
     "license": "MIT",

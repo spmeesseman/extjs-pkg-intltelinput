@@ -123,10 +123,10 @@
         "production": {
             "css": [
                 {
-                    "path": "${package.dir}/intltelinput/css/intlTelInput.min.css"
+                    "path": "/intltelinput/css/intlTelInput.min.css"
                 },
                 {
-                    "path": "${package.dir}/css/intltelinput.css"
+                    "path": "/css/intltelinput.css"
                 }
             ],
             "js": [

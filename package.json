@@ -64,6 +64,10 @@
             {
                 "path": "${package.dir}/intltelinput",
                 "output": "shared"
+            },
+            {
+                "path": "${package.dir}/css",
+                "output": "shared"
             }
         ],
         "classic": {
@@ -123,10 +127,10 @@
         "production": {
             "css": [
                 {
-                    "path": "/intltelinput/css/intlTelInput.min.css"
+                    "path": "/resources/intltelinput/css/intlTelInput.min.css"
                 },
                 {
-                    "path": "/css/intltelinput.css"
+                    "path": "/resources/intltelinput/intltelinput.css"
                 }
             ],
             "js": [
